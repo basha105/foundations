@@ -11,7 +11,8 @@
             function Header({ title }) {
                 return (
                     <div>
-                        <h1>{title ? title : 'Default title'}</h1>
+                        <h1>{title}</h1>
+                        <h1>Ion. Brent. Norah.</h1>
                     </div>
                 )
                 
@@ -19,16 +20,9 @@
     
 
             function HomePage() {
-                const names = ['Ion', 'Brent', 'Norah'];
-
                 return (
                     <div>
-                        <Header title="Siblings!"/>
-                        <ul>
-                            {names.map((name) => (
-                                <li key={name}>{name}</li>
-                            ))}
-                        </ul>
+                        <Header title="Siblings:"/>
                     </div>
                 );
             }

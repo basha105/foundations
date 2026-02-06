@@ -19,16 +19,10 @@
     
 
             function HomePage() {
-                const names = ['Ion', 'Brent', 'Norah'];
-
+                const names = ['Ion', 'Brent', 'Norah']
                 return (
                     <div>
-                        <Header title="Siblings!"/>
-                        <ul>
-                            {names.map((name) => (
-                                <li key={name}>{name}</li>
-                            ))}
-                        </ul>
+                        <Header />
                     </div>
                 );
             }
